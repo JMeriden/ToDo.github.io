@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.todo-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Input & Button */
+input, select, button {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 80%;
+}
+
+input {
+    outline: none;
+}
+
+select {
+    cursor: pointer;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background: #eee;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+    background: #ddd;
+}
+
+/* Priority Colors */
+.high {
+    background-color: #ff6961 !important; /* Red */
+    color: white;
+}
+
+.medium {
+    background-color: #fdfd96 !important; /* Yellow */
+}
+
+.low {
+    background-color: #77dd77 !important; /* Green */
+}
+
+/* Completed Task */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/*drag and drop*/
+.dragging {
+    opacity: 0.5;
+    background: lightgray;
+}
